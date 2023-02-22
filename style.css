@@ -1,3 +1,102 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: normal;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: black;
+}
+.container {
+  padding: 5%;
+  margin-bottom: 10%;
+  display: grid;
+  justify-content: center;
+  min-height: 100vh;
+}
+.calculator-grid {
+  display: grid;
+  justify-content: center;
+  align-items: left;
+  align-content: center;
+  min-height: 100vh;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+  background-color: black;
+  border: 1px solid gray;
+  border-radius: 20px;
+}
+
+.calculator-grid > button {
+  font-size: 2rem;
+  cursor: pointer;
+
+  outline: none;
+  border-radius: 200px;
+  margin: 5%;
+}
+
+/* .calculator-grid > button:hover {
+  background-color: rgba(255, 255, 255, 0.35);
+} */
+
+.output {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 10px;
+  color: #fff;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.output .previous {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1.5rem;
+}
+
+.output .current {
+  color: #fff;
+  font-size: 2.5rem;
+}
+
+#zero {
+  grid-column: span 2;
+  align-content: left;
+}
+.numbers {
+  background-color: #505050;
+  color: #fff;
+}
+.numbers:hover {
+  /* background-color: rgba(255, 255, 255, 0.35); */
+  background-color: #fff;
+  color: #505050;
+}
+.operators {
+  background-color: #ff9500;
+  color: #fff;
+}
+.operators:hover {
+  background-color: #fff;
+  color: #ff9500;
+}
+
+.actions {
+  background-color: #d4d4d2;
+  color: black;
+}
+.actions:hover {
+  background-color: #f5f5f4;
+  color: black;
+}
+
+/*
 * {
   padding: 0;
   margin: 0;
@@ -92,7 +191,7 @@ button#zero {
 }
 
 /* Light Theme*/
-
+/*
 .calculator {
   background-color: #fff;
 }
@@ -115,9 +214,9 @@ button#zero {
 .calculator button#equals {
   background-color: #ff9500;
 }
-
+*
 /* Dark Theme*/
-
+/*
 .calculator.dark {
   background-color: #1c1c1c;
 }
@@ -156,3 +255,4 @@ button#zero {
   background-color: #505050;
   color: #fff;
 }
+*/

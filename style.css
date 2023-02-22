@@ -12,12 +12,9 @@ body {
   background-color: white;
 }
 .container {
-  padding: 5%;
-  margin-bottom: 10%;
   display: grid;
   justify-content: center;
   min-height: 100vh;
-  min-width: 100vw;
 }
 .calculator-grid {
   display: grid;
@@ -25,13 +22,12 @@ body {
   align-items: left;
   align-content: center;
   min-height: 100vh;
+
   grid-template-columns: repeat(4, 100px);
   grid-template-rows: minmax(120px, auto) repeat(5, 100px);
   background-color: black;
   border: 1px solid gray;
   border-radius: 20px;
-  margin-left: 30px;
-  margin-right: 30px;
 }
 
 .calculator-grid > button {
@@ -96,6 +92,21 @@ body {
 .actions:hover {
   background-color: #f5f5f4;
   color: black;
+}
+
+@media only screen and (max-width: 400px) {
+  .calculator-grid {
+    grid-template-columns: repeat(4, 80px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+  }
+  .calculator-grid > button {
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 }
 
 /*

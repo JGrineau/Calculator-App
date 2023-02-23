@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
     <title>JP Grineau Calculator</title>
   </head>
   <body>
@@ -14,39 +15,39 @@
           <div class="theme-toggler active">
             <i class="toggler-icon"></i>
           </div> -->
+
+          <!--Output area-->
           <div class="output">
-            <div class="previous">123</div>
-            <div class="current">456</div>
+            <div data-previous class="previous"></div>
+            <div data-current class="current"></div>
           </div>
-
-          <button class="actions">AC</button>
-          <button class="actions">DEL</button>
-          <button class="actions">&divide;</button>
-          <button class="operators">&divide;</button>
-
-          <button class="numbers">7</button>
-          <button class="numbers">8</button>
-          <button class="numbers">9</button>
-          
-          <button class="operators">&times;</button>
-
-          <button class="numbers">4</button>
-          <button class="numbers">5</button>
-          <button class="numbers">6</button>
-          <button class="operators">&minus;</button>
-
-          <button class="numbers">1</button>
-          <button class="numbers">2</button>
-          <button class="numbers">3</button>
-          
-          <button class="operators">&plus;</button>
-
-          <button class="numbers" id="zero">0</button>
-          <button class="numbers">.</button>
-          <button class="operators">&equals;</button>
+          <!--First Row-->
+          <button data-all-clear class="actions">AC</button>
+          <button data-delete class="actions">DEL</button>
+          <button data-operators class="actions">&divide;</button>
+          <button data-operators class="operators">&divide;</button>
+          <!--second Row-->
+          <button data-number class="numbers">7</button>
+          <button data-number class="numbers">8</button>
+          <button data-number class="numbers">9</button>
+          <button data-operators class="operators">&times;</button>
+          <!--third Row-->
+          <button data-number class="numbers">4</button>
+          <button data-number class="numbers">5</button>
+          <button data-number class="numbers">6</button>
+          <button data-operators class="operators">&minus;</button>
+          <!--fourth Row-->
+          <button data-number class="numbers">1</button>
+          <button data-number class="numbers">2</button>
+          <button data-number class="numbers">3</button>
+          <button data-operators class="operators">&plus;</button>
+          <!--fifth Row-->
+          <button data-number class="numbers" id="zero">0</button>
+          <button data-number class="numbers">.</button>
+          <button data-equals class="operators">&equals;</button>
         </div>
       </div>
     </div>
-    <script src="script.js"></script>
+    
   </body>
 </html>
